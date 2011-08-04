@@ -35,7 +35,7 @@ hr{display:block;height:1px;border:0;padding:0;}
 		/*-Set @font-face rules (uses latest @fontspring syntax:fontspring.com/blog/further-hardening-of-the-bulletproof-syntax )-*/
 			
 		/*-Set webfont stacks for all applicable elements-*/
-			h1,h2,#nav-main,.blocklink,button{font-family:arial,sans-serif;letter-spacing:0.07em;}
+			h1,h2{font-family:arial,sans-serif;letter-spacing:0.07em;}
 		/*-Set base rules for all typographic elements*/
 			/*Set base font-family/line-height and declare the px size of an em unit*/
 				body{font:14px/1.3em arial,helvetica,sans-serif;}
