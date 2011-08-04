@@ -1,0 +1,149 @@
+/*================
+Reset and globally-applied styles
+Version 1.0
+Author: Jack Armley jack.armley@yahoo.co.uk
+Created: 06.22.2011
+Last revised: --
+--
+Contents:
+--
+==================*/
+
+/*========
+[=1:Base globally-available styles]
+======== */
+
+/*================
+Reset and globally-applied styles
+Version 1.0
+Author: Jack Armley jack.armley@tangentone.co.uk
+Created: 06.22.2011
+Last revised: --
+--
+Contents:
+--
+==================*/
+
+/*========
+[=1: html5doctor.com reset]
+v1.6.1 | Last Updated: 2010-09-17 | Author: Richard Clark (richclarkdesign.com)
+(jack.armley@tangentone.co.uk: Some lines have been modified, to remove unneccesary styles that will be immediately overridden by the base styles)
+========*/
+	html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+	article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{ display:block;}
+	nav ul{list-style:none;margin-left:0;}
+	blockquote,q{quotes:none;}
+	blockquote:before,blockquote:after,
+	q:before,q:after{content:'';content:none;}
+	a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;}
+	del{text-decoration:line-through;}
+	abbr[title],dfn[title]{border-bottom:none;cursor:help;}
+	table{border-collapse:collapse;border-spacing:0;}
+	input,select{vertical-align:middle;}
+	ins{text-decoration:none;}
+	hr{display:block;height:1px;border:0;padding:0;}
+
+/*========
+[=2:Base globally-available styles]
+======== */
+	/*--[=2a:Typography]--*/
+		/*-Set @font-face rules (uses latest @fontspring syntax:fontspring.com/blog/further-hardening-of-the-bulletproof-syntax )-*/
+			
+		/*-Set webfont stacks for all applicable elements-*/
+			h1,h2,#nav-main,.blocklink,button{font-family:arial,sans-serif;letter-spacing:0.07em;}
+		/*-Set base rules for all typographic elements*/
+			/*Set base font-family/line-height and declare the px size of an em unit*/
+				body{font:14px/1.3em arial,helvetica,sans-serif;}
+			/*Block elements*/   
+				p{margin:0 0 1em 0;line-height:1.3em;}
+				h1,h2,h3,h4,h5,h6{line-height:1.15em;font-weight:normal;margin:1.5em 0 0.5em 0;}
+					h1{font-size:2.28em;}
+					h2{font-size:1.42em;}
+					h3{font-size:1.21em;}
+					h4,h5,h6{font-size:1.10em;}
+				ul,ol{margin:0 0 1em 2.4em;}	
+						ul li,ol li{margin:0;}
+					ul{list-style:disc outside;}
+						ul ul{margin:0.25em 0 0.5em 1em;}
+					ol{list-style:decimal outside;}
+						ol ol{margin:0.25em 0 0.5em 1.4em;list-style-type:lower-roman;}
+				dl{margin:0 0 1em 0;}
+					dt{font-weight:bold;margin:0.5em 0 0.05em 0;}
+					dd{margin:0;}
+				blockquote{margin:0 0 1em 2.4em;}
+					blockquote p{font-size:1.1em;line-height:1.4em;}
+					blockquote cite{display:block;margin:-0.5em 0 1em 0;}
+				hr{border-top:1px solid #ccc;margin:1em 0;}	
+				pre{white-space:pre;width:100%;overflow:auto;margin:0 0 1em 0;}
+			/*Inline elements*/
+				/*Superscript/subscript*/
+					sup,sub{position:relative;height:0;line-height:0.1em;}
+						sup{bottom:1ex;}
+						sub{top:.5ex;}
+				/*For marking up content relevency/edits and highlighting content*/		  
+					ins{background-color:#ff9;}
+					del{text-decoration:line-through;}
+					s{color:#666;text-decoration:line-through}
+					mark{background-color:#ff9;font-weight:bold;}
+				/*Inline quotes / small print*/	
+					q{font-style:italic;}
+					cite{font-style:italic;}
+					small{font-weight:normal;font-style:normal;}
+				/*phrase tags*/
+					strong{font-weight:bold;}
+					em{font-style:italic;}
+					dfn,abbr{font-style:inherit;}
+					code,samp,kbd{font-family:courier,monospace;}
+					var{font-style:italic;font-weight:bold;}
+	/*--[=2b:Links]--*/
+		:focus{outline:none;}
+		/*-Inline links-*/
+			a{color:#E90E8C;text-decoration:none;}
+				a:link{color:#E90E8C;text-decoration:none;}
+				a:visited{color:#E90E8C;text-decoration:none;}
+				a:hover{color:#E90E8C;text-decoration:underline;}
+				a:active{color:#E90E8C;text-decoration:none;}		
+		/*-Linked images-*/
+			a img{border:none;}
+	/*--[=2c:Images]--*/
+		/*Standalone*/
+			img{margin:0 0 1em 0;padding:0.14em 0 0 0;}
+		/*Within a figure tag*/
+			figure{margin:0 0 1em 0;}
+				figure img{margin:0 0 0.25em 0;}
+				figure figcaption{font-size:0.85em;margin:0;}
+	/*--[=2d:Forms]--*/
+		form{margin:0 0 1em 0;}
+			legend{margin:0 0 0.25em 0;}
+			label{display:block;margin:0 0 0.25em 0;}
+			input,textarea{display:block;margin:0 0 0.78em 0;padding:0.5em 5px;border:1px solid #D1D1D1;font-size:1em;line-height:1.3em;font-style:italic;}
+			input.error,textarea.error{background:#fff;color:#777;border:1px solid #ccc;box-shadow:inset 0 0 5px #F4F4F4;}
+			p.error{color:#E90E8C;margin:-0.5em 0 1em 0;font-size:0.85em;font-weight:bold;}
+	/*--[=2e:Tables]--*/
+		table{margin:0 0 1em 0;width:100%;border:1px solid #000;}
+			caption{text-align:left;padding:0 0 0.5em 0;}
+			td,th{padding:0.35em 1em;text-align:left;border:1px dotted #000;}
+			thead{border-bottom:2px solid #000;font-weight:bold;}
+				thead th{border-style:solid;}
+			tfoot{font-style:italic;}
+	/*--[=2d:Display modifiers]--*/
+		/*Hide an element*/
+			.inv{text-indent:-90000px;height:0;position:absolute;}
+		/* Universal clear */
+			.clear{clear:both;display:block;overflow:hidden;}
+		/* Enhanced Universal Clearfix hack */
+			.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+			.clearfix{display:inline-block;}
+			/* Start commented backslash hack \*/
+				* html .clearfix{height:1%;}
+				.clearfix{display:block;}
+			/* Close commented backslash hack */
+
+	
+	
+		
+		
+
+
+	
+
