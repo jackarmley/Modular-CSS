@@ -1,1 +1,7 @@
 //Modular CSS file
+
+Designed to be used with a HTML5 doctype.
+
+Added richard Clark's reset with a few modifications (removed presentational styles).
+
+Also, there's a set of clean base styles, commented to remind me of what these new-fangled HTML5 tags are for (and how originl ones like <hr /> have been repurposed.
