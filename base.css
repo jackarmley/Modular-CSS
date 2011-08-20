@@ -34,29 +34,29 @@ v1.6.1 | Last Updated: 2010-09-17 | Author: Richard Clark (richclarkdesign.com)
 		/*-Set @font-face rules (uses latest @fontspring syntax:fontspring.com/blog/further-hardening-of-the-bulletproof-syntax )-*/
 			
 		/*-Set webfont stacks for all applicable elements-*/
-			h1,h2{font-family:arial,sans-serif;letter-spacing:0.07em;}
+			h1,h2{font-family:Georgia,times,serif;letter-spacing:0.07em;}
 		/*-Set base rules for all typographic elements*/
 			/*Set base font-family/line-height and declare the px size of an em unit*/
-				body{font:14px/1.3em arial,helvetica,sans-serif;}
+				body{font:14px/1.3em Georgia,times,serif;}
 			/*Block elements*/   
 				p{margin:0 0 1em 0;line-height:1.3em;}
-				h1,h2,h3,h4,h5,h6{line-height:1.15em;font-weight:normal;margin:1.5em 0 0.5em 0;}
+				h1,h2,h3,h4,h5,h6{line-height:1.2em;font-weight:normal;margin:1.5em 0 0.5em 0;}
 					h1{font-size:2.28em;}
 					h2{font-size:1.42em;}
 					h3{font-size:1.21em;}
 					h4,h5,h6{font-size:1.10em;}
 				ul,ol{margin:0 0 1em 2.4em;}	
-						ul li,ol li{margin:0;}
+						ul li,ol li{margin:0 0 0.5em 0;}
 					ul{list-style:disc outside;}
 						ul ul{margin:0.25em 0 0.5em 1em;}
 					ol{list-style:decimal outside;}
 						ol ol{margin:0.25em 0 0.5em 1.4em;list-style-type:lower-roman;}
 				dl{margin:0 0 1em 0;}
-					dt{font-weight:bold;margin:0.5em 0 0.05em 0;}
-					dd{margin:0;}
+					dt{font-weight:bold;margin:0.5em 0 0.25em 0;}
+					dd{margin:0 0 0.25em 0;}
 				blockquote{margin:0 0 1em 2.4em;}
 					blockquote p{font-size:1.1em;line-height:1.4em;}
-					blockquote cite{display:block;margin:-0.5em 0 1em 0;}
+					blockquote footer{display:block;margin:-0.5em 0 1em 0;}
 				hr{border-top:1px solid #ccc;margin:1em 0;}	
 				pre{white-space:pre;width:100%;overflow:auto;margin:0 0 1em 0;}
 			/*Inline elements*/
@@ -127,7 +127,8 @@ v1.6.1 | Last Updated: 2010-09-17 | Author: Richard Clark (richclarkdesign.com)
 /*========
 [=3:Modular components]
 ======== */	
-
+	/*--[=3a:Hgroup]--*/
+		hgroup h1,hgroup h2{margin:0 0 0.25em 0;}
 /*========
 [=4:Global layout styles]
 ======== */
@@ -135,6 +136,11 @@ v1.6.1 | Last Updated: 2010-09-17 | Author: Richard Clark (richclarkdesign.com)
 /*========
 [=5:Section-specific layout styles]
 ======== */
+	#p-test{background:#ddd;}
+		#p-test hgroup{margin:0 0 2em 0;padding:0 0 1em 0;border-bottom:1px dotted #666;}
+		#p-test hgroup+h2{margin-top:0;}
+		#p-test article{background:#fff;width:500px;margin:0 auto;padding:4em 2em;}
+	
 
 /*========
 [=6:Media queries]
