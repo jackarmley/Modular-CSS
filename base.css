@@ -36,8 +36,9 @@ v1.6.1 | Last Updated: 2010-09-17 | Author: Richard Clark (richclarkdesign.com)
 		/*-Set webfont stacks for all applicable elements-*/
 			h1,h2{font-family:Georgia,times,serif;letter-spacing:0.07em;}
 		/*-Set base rules for all typographic elements*/
-			/*Set base font-family/line-height and declare the px size of an em unit*/
-				body{font:14px/1.3em Georgia,times,serif;}
+			/*Set base font-family/line-height and declare the px size of an em unit*/ 
+				body{font-size:87.5%;}/*set size for IE6*/
+				html>body{font:14px/1.3em Georgia,times,serif;}/*set size for modern browsers*/
 			/*Block elements*/   
 				p{margin:0 0 1em 0;line-height:1.3em;}
 				h1,h2,h3,h4,h5,h6{line-height:1.2em;font-weight:normal;margin:1.5em 0 0.5em 0;}
