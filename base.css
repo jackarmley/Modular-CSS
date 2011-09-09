@@ -58,6 +58,7 @@ v1.6.1 | Last Updated: 2010-09-17 | Author: Richard Clark (richclarkdesign.com)
 				blockquote{margin:0 0 1em 2.4em;}
 					blockquote p{font-size:1.1em;line-height:1.4em;}
 					blockquote footer{display:block;margin:-0.5em 0 1em 0;}
+						blockquote footer p{font-size:1em;}
 				hr{border-top:1px solid #ccc;margin:1em 0;}	
 				pre{white-space:pre;width:100%;overflow:auto;margin:0 0 1em 0;}
 			/*Inline elements*/
